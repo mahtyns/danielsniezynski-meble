@@ -619,6 +619,18 @@ video {
   background-color: rgb(23 55 46 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/src\/assets\/images\/hero\.gif\'\)\] {
+  background-image: url('./src/assets/images/hero.gif');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/hero\.gif\'\)\] {
+  background-image: url('/src/assets/images/hero.gif');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
