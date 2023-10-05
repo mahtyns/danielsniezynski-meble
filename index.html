@@ -36,11 +36,11 @@
     <body>
         <header>
             <nav>
-                <div class="bg-special-green w-full flex flex-row text-main-white justify-between p-6">
+                <div class="bg-special-green w-full flex flex-row text-main-white justify-between p-6 relative">
                     <div id="Logo" class="text-xl font-crimson">
                         Daniel Śnieżyński
                     </div>
-                    <div id="Menu">
+                    <div id="Menu" c>
                         <div class="">
                             <div id="burger-menu" class="w-8 h-8 invert">
                                 <img
@@ -49,39 +49,38 @@
                             </div>
                         </div>
                         <!-- menu shown on mobile  -->
-                        <!-- <div id='responsive-links' class="">
-                            <div class="" id="closeBtn">
+                         <div id='responsive-links' class="bg-special-green-hover z-10 absolute left-0 top-0 w-full h-[100vh] overflow-x-hidden p-10"> 
+                            <div class="w-[90%] flex justify-end text-2xl my-5" id="closeBtn">
                                 X
                             </div>
-                            <ul>
-                                <li>
+                            <ul class="text-2xl">
+                                <li class="my-5 px-8">
                                     <a href="#main">
                                         Strona główna
                                     </a>
                                 </li>
-                                <li>
+                                <li class="my-5 px-8">
                                     <a href="./pages/tarasy.html">
                                         Tarasy i ogrodzenia
                                     </a>
                                 </li>
-                                <li>
+                                <li class="my-5 px-8">
                                     <a href="./pages/meble.html">
                                         Meble na wymiar
                                     </a>
                                 </li>
-                                <li>
+                                <li class="my-5 px-8">
                                     <a href="#contact">
                                         Kontakt
                                     </a>
                                 </li>
-                                <li class="accent">
+                                <li  class="my-5 px-8">
                                     <a href="tel:+48737494150">
                                         Zadzwoń
                                     </a>
                                 </li>
                             </ul>
-                        </div> -->
-                        <div class=""></div>
+                        </div> 
                     </div>
                 </div>
             </nav>
@@ -205,6 +204,6 @@
                 </div>
             </div>
         </footer>
-        <script type="module" src="/main.js"></script>
+        <script type="module" src="/src/scripts/responsiveMenu.js"></script>
     </body>
 </html>
