@@ -41,12 +41,37 @@
                         Daniel Śnieżyński
                     </div>
                     <div id="Menu" >
-                        <div>
-                            <div id="burger-menu" class="w-8 h-8 invert">
+                        <div class="md:hidden">
+                            <div id="burger-menu" class="w-8 h-8 invert ">
                                 <img
                                     src="https://cdn-icons-png.flaticon.com/512/10179/10179212.png"
                                     alt="burger-menu"/>
                             </div>
+                        </div>
+                        <!-- desktop menu  -->
+                        <div class="uppercase hidden md:block">
+                            <ul class="text-md flex flex-row gap-6">
+                                <li >
+                                    <a href="#main" class="hover:underline hover:underline-offset-4">
+                                        Strona główna
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="./pages/tarasy.html" class="hover:underline hover:underline-offset-4">
+                                        Tarasy i ogrodzenia
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="./pages/meble.html" class="hover:underline hover:underline-offset-4">
+                                        Meble na wymiar
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="#contact" class="hover:underline hover:underline-offset-4">
+                                        Kontakt
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                         <!-- menu shown on mobile  -->
                          <div id='responsive-links' class="bg-special-green-hover z-10 absolute left-0 top-0 w-full h-[100vh] overflow-x-hidden p-10 hidden"> 
