@@ -89,7 +89,7 @@
             <div class="flex flex-col justify-center items-center h-full text-center bg-[url('/src/assets/images/hero.gif')] bg-cover bg-center">
                 <h1 class="text-6xl font-bold uppercase text-main-white">Daniel Śnieżyński</h1>
                 <h2 class="text-3xl text-center uppercase my-4 text-main-white">Meble na wymiar - Tarasy i ogrodzenia</h2>
-                    <button id="call" class="bg-special-green text-main-white uppercase px-8 py-3 mt-4" onclick="window.location.href='tel:+48737494150'">Zadzwoń</button>
+                    <button id="call" class="bg-special-green text-main-white uppercase px-8 py-3 mt-8" onclick="window.location.href='tel:+48737494150'">Zadzwoń</button>
             </div>
         </section>
         <section id="gallery" class="bg-special-green text-main-white px-6 py-8 flex flex-col justify-center">
@@ -102,20 +102,20 @@
                         <h4 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl uppercase tracking-wide">Tarasy</h4>
                         <img src="./src/assets/images/tarasy.jpg" alt="Tarasy" />
                     </div>
-                    <button class="bg-main-white text-special-green uppercase px-8 py-3 my-2" onclick="window.location='./pages/tarasy.html'">Zobacz więcej</button>
+                    <button class="bg-main-white text-special-green uppercase px-8 py-3 my-6" onclick="window.location='./pages/tarasy.html'">Zobacz więcej</button>
                 </div>
                 <div class="flex flex-col items-center my-6 justify-center" >
                     <div class="relative">
                         <h4 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl uppercase tracking-wide">Meble</h4>
                         <img src="./src/assets/images/meble.jpg" alt="Meble" />
                     </div>
-                    <button class="bg-main-white text-special-green uppercase px-8 py-3 my-2" onclick="window.location='./pages/meble.html'">Zobacz więcej</button>
+                    <button class="bg-main-white text-special-green uppercase px-8 py-3 my-6" onclick="window.location='./pages/meble.html'">Zobacz więcej</button>
                 </div>
             </div>
         </section>
         <section id="about" class="h-md bg-cream px-6 flex flex-col justify-center" >
             <h2 class="text-4xl pb-4">O nas</h2>
-            <p class="text-lg ">Nasza firma zajmuje się produkcją wszelkiego rodzaju mebli na wymiar -od
+            <p class="text-lg ">Nasza firma zajmuje się produkcją wszelkiego rodzaju mebli na wymiar - od
                 projektu po montaż. Pracujemy na najwyższej jakości materiałach oraz do każdego
                 zlecenia podchodzimy indywidualnie aby każdy klient był zadowolony i do nas
                 wracał. Wykonujemy również prace w drewnie takie jak ogrodzenia drewniane,
@@ -126,12 +126,12 @@
             </p>
         </section>
         <section id="services" class="px-6 py-12">
-            <h2 class="text-4xl pb-4"> Nasza oferta</h2>
-            <h3 class="text-2xl">Wszelkiego rodzaju zabudowy meblowe i zabudowy drewniane.</h3>
-            <div id="oferta-lista" class="my-6">
+            <h2 class="text-4xl pb-4 w-full md:text-center md:text-5xl"> Nasza oferta</h2>
+            <h3 class="text-2xl md:text-center md:text-3xl">Wszelkiego rodzaju zabudowy meblowe i zabudowy drewniane.</h3>
+            <div id="oferta-lista" class="w-full my-6 flex flex-col md:flex-row gap-12 md:gap-40 md:justify-center ">
                 <div>
-                    <h4 class="text-2xl uppercase">Zabudowy meblowe</h4>
-                    <ul class="text-lg" id="meblowe">
+                    <h4 class="text-2xl uppercase my-4">Zabudowy meblowe</h4>
+                    <ul class="text-lg md:text-xl flex flex-col gap-2" id="meblowe">
                         <li><img src="./src/assets/images/arrow.png" class="inline w-5 h-5 mr-2" />Kuchnie</li>
                         <li><img src="./src/assets/images/arrow.png" class="inline w-5 h-5 mr-2" />Szafy</li>
                         <li><img src="./src/assets/images/arrow.png" class="inline w-5 h-5 mr-2" />Garderoby</li>
@@ -143,9 +143,9 @@
                         <li><img src="./src/assets/images/arrow.png" class="inline w-5 h-5 mr-2" />Stoły z blatów kompaktowych</li>
                     </ul>
                 </div>
-                <div class="my-6">
-                    <h4 class="text-2xl uppercase">Zabudowy drewniane</h4>
-                    <ul class="text-lg" id="drewniane">
+                <div>
+                    <h4 class="text-2xl uppercase my-4">Zabudowy drewniane</h4>
+                    <ul class="text-lg md:text-xl flex flex-col gap-2" id="drewniane">
                         <li><img src="./src/assets/images/arrow.png" class="inline w-5 h-5 mr-2" />Altany</li>
                         <li><img src="./src/assets/images/arrow.png" class="inline w-5 h-5 mr-2" />Drewutnie</li>
                         <li><img src="./src/assets/images/arrow.png" class="inline w-5 h-5 mr-2" />Wiaty</li>
@@ -157,7 +157,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="text-lg">Wykonujemy także renowacje wszelakich drewnianych konstrukcji, blatów,
+            <p class="text-lg md:text-center">Wykonujemy także renowacje wszelakich drewnianych konstrukcji, blatów,
                 elewacji, tarasów itd.</p>
         </section>
         <section id="contact" class="h-sm px-6 bg-special-green text-main-white flex flex-col justify-center">
@@ -166,7 +166,7 @@
                 <p class="text-xl">Meble robione na wymiar, ogrodzenia i tarasy. Realizacje na terenie Warszawy
                     i okolic. Skontaktuj się z nami i przygotujemy dla ciebie indywidualną wycenę.
                 </p>
-                <div class="w-[80%] justify-between flex flex-row">
+                <div class="w-[300px] justify-between flex flex-row font-bold">
                         <button class="bg-main-white text-special-green uppercase px-5 py-2 mt-4" onclick="window.location.href='tel:+48737494150'">
                             Zadzwoń
                         </button>
