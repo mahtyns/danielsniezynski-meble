@@ -18,7 +18,8 @@ export default {
       height: {
         lg: '800px',
         md: '550px',
-        sm: '450px'
+        sm: '450px',
+        xs: '250px'
       }
     },
   },

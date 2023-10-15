@@ -35,11 +35,12 @@
     <body>
         <header>
             <nav>
-                <div class="bg-special-green w-full flex flex-row text-main-white justify-between p-6 relative">
+                <div
+                    class="bg-special-green w-full flex flex-row text-main-white justify-between p-6 relative">
                     <div id="Logo" class="text-xl font-crimson">
                         Daniel Śnieżyński
                     </div>
-                    <div id="Menu" >
+                    <div id="Menu">
                         <div class="md:hidden">
                             <div id="burger-menu" class="w-8 h-8 invert ">
                                 <img
@@ -73,7 +74,9 @@
                             </ul>
                         </div>
                         <!-- menu shown on mobile  -->
-                         <div id='responsive-links' class="bg-special-green-hover z-10 absolute left-0 top-0 w-full h-[100vh] overflow-x-hidden p-10 hidden"> 
+                        <div
+                            id='responsive-links'
+                            class="bg-special-green-hover z-10 absolute left-0 top-0 w-full h-[100vh] overflow-x-hidden p-10 hidden">
                             <div class="w-[90%] flex justify-end text-2xl my-5" id="closeBtn">
                                 X
                             </div>
@@ -98,59 +101,68 @@
                                         Kontakt
                                     </a>
                                 </li>
-                                <li  class="my-5 px-8">
+                                <li class="my-5 px-8">
                                     <a href="tel:+48737494150">
                                         Zadzwoń
                                     </a>
                                 </li>
                             </ul>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
         <main>
-            <div class="w-full p-6">
-                <h1 class="text-3xl">Meble na wymiar - Galeria</h1>
+            <div class="w-full relative h-xs">
+                <h1
+                    class="text-3xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-main-white">Meble na wymiar - Galeria</h1>
+                <img
+                    class="w-full h-xs object-cover"
+                    src="https://images.unsplash.com/photo-1695960825946-b18ac25ad226?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                    alt="Meble na wymiar"/>
             </div>
 
+            <div class="p-6">
+                <a href="../index.html">
+                    <h3 class="text-xl"><img
+                        src="https://cdn-icons-png.flaticon.com/512/2722/2722991.png"
+                        class="w-4 h-4 inline"/></span>Powrót na stronę główną</h3>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-main-black text-gray-500 px-6 py-2">
+        <div class="flex flex-row justify-between">
             <div>
-                <h3 class="text-xl">Powrót na stronę główną</h3>
-            </div>
-        </main>
-
-        <footer class="bg-main-black text-gray-500 px-6 py-2">
-            <div class="flex flex-row justify-between">
-                <div>
-                    <h4>
-                        Daniel Śnieżyński Meble
-                    </h4>
-                    <div class="">
-                        Tel: +48 737-494-150
-                    </div>
-                    <div class="">
-                        Mail: meble.daniel@gmail.com
-                    </div>
-                    <div class="invert opacity-40">
-                        <a href="https://www.instagram.com/meble.sniezynski" target="_blank">
-                            <img
-                                src="https://cdn-icons-png.flaticon.com/512/87/87390.png"
-                                alt="insta"
-                                class="w-8 h-8"/>
-                        </a>
-                    </div>
-                    <div>
-                        Copyright © 2023
-                    </div>
+                <h4>
+                    Daniel Śnieżyński Meble
+                </h4>
+                <div class="">
+                    Tel: +48 737-494-150
                 </div>
-                <div class="text-right">
-                    <a href="https://martynasmolarek.netlify.app" target="_blank">
-                        Created by Martyna Smolarek
+                <div class="">
+                    Mail: meble.daniel@gmail.com
+                </div>
+                <div class="invert opacity-40">
+                    <a href="https://www.instagram.com/meble.sniezynski" target="_blank">
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/87/87390.png"
+                            alt="insta"
+                            class="w-8 h-8"/>
                     </a>
                 </div>
+                <div>
+                    Copyright © 2023
+                </div>
             </div>
-        </footer>
-        <script type="module" src="../src/scripts/responsiveMenu.js"></script>
+            <div class="text-right">
+                <a href="https://martynasmolarek.netlify.app" target="_blank">
+                    Created by Martyna Smolarek
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../src/scripts/responsiveMenu.js"></script>
 
-    </body>
+</body>
 </html>
