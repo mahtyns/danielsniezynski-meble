@@ -35,23 +35,45 @@
     <body>
         <header>
             <nav>
-                <div
-                    class="bg-special-green w-full flex flex-row text-main-white justify-between p-6">
+                <div class="bg-special-green w-full flex flex-row text-main-white justify-between p-6 relative">
                     <div id="Logo" class="text-xl font-crimson">
                         Daniel Śnieżyński
                     </div>
-                    <div id="Menu">
-                        <div class="">
-                            <div id="burger-menu" class="w-8 h-8 invert">
+                    <div id="Menu" >
+                        <div class="md:hidden">
+                            <div id="burger-menu" class="w-8 h-8 invert ">
                                 <img
                                     src="https://cdn-icons-png.flaticon.com/512/10179/10179212.png"
                                     alt="burger-menu"/>
                             </div>
                         </div>
+                        <!-- desktop menu  -->
+                        <div class="uppercase hidden md:block">
+                            <ul class="text-md flex flex-row gap-6">
+                                <li >
+                                    <a href="../index.html" class="hover:underline hover:underline-offset-4">
+                                        Strona główna
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="./tarasy.html" class="hover:underline hover:underline-offset-4">
+                                        Tarasy i ogrodzenia
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="./meble.html" class="hover:underline hover:underline-offset-4">
+                                        Meble na wymiar
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="#contact" class="hover:underline hover:underline-offset-4">
+                                        Kontakt
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <!-- menu shown on mobile  -->
-                        <div
-                            id='responsive-links'
-                            class="bg-special-green-hover z-10 absolute left-0 top-0 w-full h-[100vh] overflow-x-hidden p-10 hidden">
+                         <div id='responsive-links' class="bg-special-green-hover z-10 absolute left-0 top-0 w-full h-[100vh] overflow-x-hidden p-10 hidden"> 
                             <div class="w-[90%] flex justify-end text-2xl my-5" id="closeBtn">
                                 X
                             </div>
@@ -76,14 +98,13 @@
                                         Kontakt
                                     </a>
                                 </li>
-                                <li class="my-5 px-8">
+                                <li  class="my-5 px-8">
                                     <a href="tel:+48737494150">
                                         Zadzwoń
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-
+                        </div> 
                     </div>
                 </div>
             </nav>
