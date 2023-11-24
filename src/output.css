@@ -930,6 +930,17 @@ body {
   background-color: #f9f9f9;
 }
 
+.reveal {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 2s all ease-in-out;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
