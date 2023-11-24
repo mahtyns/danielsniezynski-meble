@@ -9,9 +9,7 @@ const revealElements = () => {
         if (elementTop < elementVisible) {
             element.classList.add('active')
         }
-        else {
-            element.classList.remove('active')
-        }
+
     })
   
 }
