@@ -12,3 +12,6 @@ const renderGallery = () => {mebleLista.forEach(image => {
 }
 
 renderGallery()
+
+const showMoreButton = document.getElementById('meble-see-more')
+
