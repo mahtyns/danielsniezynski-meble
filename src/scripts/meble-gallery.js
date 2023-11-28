@@ -1,19 +1,32 @@
 import arrayFiles from "../assets/data/meble-galeria";
-
-const galleryContainer = document.getElementById('galeria-meble')
-
-
-const renderGallery = () => {arrayFiles.slice(0,6).forEach(image => {
-    const imageContainer = document.createElement('div')
-    imageContainer.innerHTML = `<img loading="lazy" class="w-full h-[450px] cursor-pointer hover:brightness-50 object-cover" src="${image.imgSrc}" alt="${image.imgAlt}" />`
-
-    galleryContainer.appendChild(imageContainer)
-})
-}
-
-renderGallery()
-
 const showMoreButton = document.getElementById('meble-see-more')
 
-const importAllImages = (context) => context.keys().map(context);
-const galleryImages = importAllImages(require.context('../assets/images/gallery', false, /\.(png|jpe?g|svg)$/));
+const galleryContainer = document.getElementById('galeria-meble')
+const startInd = 0;
+let sliceNum = 6;
+const addMorePhotosNum = 6;
+
+const renderGallery = () => {
+    galleryContainer.innerHTML = '';
+
+    arrayFiles
+        .slice(startInd, sliceNum)
+        .forEach(image => {
+            const imageContainer = document.createElement('div')
+            imageContainer.innerHTML = `<img loading="lazy" class="w-full h-[450px] cursor-pointer hover:brightness-50 object-cover" src="${image.imgSrc}" alt="${image.imgAlt}" />`
+
+            galleryContainer.appendChild(imageContainer)
+        })
+}
+
+renderGallery();
+
+const addMorePhotos = () => {
+    if (sliceNum < arrayFiles.length) {
+        sliceNum = sliceNum + addMorePhotosNum;
+        renderGallery()
+    } 
+    else {showMoreButton.innerText = "To już wszystko!"}
+}
+
+showMoreButton.addEventListener("click", addMorePhotos)
