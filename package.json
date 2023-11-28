@@ -6,11 +6,13 @@
   "scripts": {
     "tailwind": "npx tailwindcss -i index.css -o ./src/output.css --watch",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && webpack --config webpack.config.js",
     "preview": "vite preview"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
