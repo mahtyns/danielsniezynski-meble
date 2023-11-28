@@ -16,7 +16,7 @@ export default {
         crimson: ['Crimson Text', 'serif']
       },
       height: {
-        lg: '800px',
+        lg: '900px',
         md: '550px',
         sm: '450px',
         xs: '250px'
