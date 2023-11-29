@@ -1,11 +1,12 @@
-import {tarasyLista} from "../assets/data/tarasy-galeria";
+import tarasyArray from "../assets/data/tarasy-galeria";
+
 
 const galleryContainer = document.getElementById('galeria-tarasy')
 
 const renderGallery = () => {
-    tarasyLista.forEach(image => {
+    tarasyArray.forEach(image => {
         const imageContainer = document.createElement('div')
-        imageContainer.innerHTML = `<img loading="lazy" class="w-full h-[450px] cursor-pointer hover:brightness-90" src="${image.imgSrc}" alt="${image.imgAlt}" />`
+        imageContainer.innerHTML = `<img loading="lazy" class="w-full h-[450px] cursor-pointer hover:brightness-90 object-cover" src="${image.imgSrc}" alt="${image.imgAlt}" />`
 
         galleryContainer.appendChild(imageContainer)
     })

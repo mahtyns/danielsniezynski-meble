@@ -630,6 +630,10 @@ video {
   height: 100vh;
 }
 
+.h-\[450px\] {
+  height: 450px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -644,18 +648,6 @@ video {
 
 .h-xs {
   height: 250px;
-}
-
-.h-\[380px\] {
-  height: 380px;
-}
-
-.h-\[450px\] {
-  height: 450px;
-}
-
-.max-h-\[380px\] {
-  max-height: 380px;
 }
 
 .w-1\/2 {
@@ -684,22 +676,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[380px\] {
-  width: 380px;
-}
-
-.w-\[450px\] {
-  width: 450px;
-}
-
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-\[380px\] {
-  max-width: 380px;
 }
 
 .-translate-x-1\/2 {
@@ -967,11 +943,6 @@ body {
 
 .hover\:underline-offset-4:hover {
   text-underline-offset: 4px;
-}
-
-.hover\:brightness-50:hover {
-  --tw-brightness: brightness(.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .hover\:brightness-90:hover {

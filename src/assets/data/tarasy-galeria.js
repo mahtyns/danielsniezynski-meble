@@ -1,23 +1,12 @@
-import img1 from '../images/gallery/taras1.jpg'
-import img2 from '../images/gallery/taras2.jpg'
-import img3 from '../images/gallery/taras3.jpg'
+const filesNum = 5;
+const tarasyArray = [];
 
-export const tarasyLista = [ 
-    {
-        id: 0,
-        imgSrc: img1,
-        imgAlt: 'Taras'
-    },
-    {
-        id: 1,
-        imgSrc: img2,
-        imgAlt: 'Taras'
-    },
-    {
-        id: 2,
-        imgSrc: img3,
-        imgAlt: 'Taras'
-    },
+for ( let i = 0; i < filesNum; i++) {
+    tarasyArray.push({
+        id: i,
+        imgSrc: `/src/assets/images/gallery/taras${i+1}.jpg`,
+        imgAlt: `Taras ${i+1}`
+    })
+}
 
-
-]
+export default tarasyArray
