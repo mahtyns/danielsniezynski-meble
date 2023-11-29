@@ -9,7 +9,8 @@ export default {
         'main-black': '#171717',
         'special-green': '#17372e',
         'special-green-hover': '#2c6d5a',
-        'cream': '#ecece8'
+        'cream': '#ecece8',
+        'black-opacity':'rgba(0,0,0,.5)'
       },
       fontFamily: {
         lato: ['Lato', 'sans-serif'],

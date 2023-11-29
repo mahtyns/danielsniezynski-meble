@@ -634,6 +634,10 @@ video {
   height: 450px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -738,6 +742,14 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.bg-black-opacity {
+  background-color: rgba(0,0,0,.5);
 }
 
 .bg-cream {

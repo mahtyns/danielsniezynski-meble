@@ -1,6 +1,5 @@
 import tarasyArray from "../assets/data/tarasy-galeria";
 
-
 const galleryContainer = document.getElementById('galeria-tarasy')
 
 const renderGallery = () => {
