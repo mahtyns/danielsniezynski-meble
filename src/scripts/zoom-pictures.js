@@ -1,4 +1,5 @@
-const galleryPictures = document.querySelectorAll('#galeria-tarasy img');
+const galleryPicturesTarasy = document.querySelectorAll('#galeria-tarasy img');
+const galleryPicturesMeble = document.querySelectorAll('#galeria-meble img');
 const page = document.querySelector('body')
 const pageFirstChild = page.firstChild;
 
@@ -10,7 +11,14 @@ const zoomInPictures = (pic) => {
     page.classList.add('overflow-y-hidden')
     zoomInWrapper.classList.add(...listClasses);
     zoomInWrapper.innerHTML = `<img src=${imgSrc} alt=${imgAlt} class="w-[90%] h-auto cursor-pointer" />`
-    page.insertBefore(zoomInWrapper, pageFirstChild)
+    page.insertBefore(zoomInWrapper, pageFirstChild);
+    zoomInWrapper.addEventListener('click', ()=> {
+        page.classList.remove('overflow-y-hidden');
+        zoomInWrapper.remove()
+    })
 }
 
-galleryPictures.forEach(picture => picture.addEventListener('click', ()=>zoomInPictures(picture)))
+
+galleryPicturesTarasy.forEach(picture => picture.addEventListener('click', ()=>zoomInPictures(picture)));
+galleryPicturesMeble.forEach(picture => picture.addEventListener('click', ()=>zoomInPictures(picture)));
+
