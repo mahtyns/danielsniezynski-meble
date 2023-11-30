@@ -9,6 +9,8 @@ const renderGallery = () => {
 
         galleryContainer.appendChild(imageContainer)
     })
+
+
 }
 
 renderGallery()

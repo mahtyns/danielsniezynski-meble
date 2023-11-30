@@ -3,7 +3,7 @@ const galleryPicturesMeble = document.querySelectorAll('#galeria-meble img');
 const page = document.querySelector('body')
 const pageFirstChild = page.firstChild;
 
-const zoomInPictures = (pic) => {
+export const zoomInPictures = (pic) => {
     const zoomInWrapper = document.createElement('div');
     const imgSrc = pic.getAttribute('src');
     const imgAlt = pic.getAttribute('alt');
