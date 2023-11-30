@@ -3,7 +3,7 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  assetsInclude: ['**/*.jpg'],
+  assetsInclude: 'src/assets/**',
   build: {
     rollupOptions: {
       input: {
