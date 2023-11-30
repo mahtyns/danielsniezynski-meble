@@ -9,8 +9,18 @@ export const zoomInPictures = (pic) => {
     zoomInWrapper.classList.add(...listClasses);
     zoomInWrapper.innerHTML = `<img src=${imgSrc} alt=${imgAlt} class="w-[90%] h-auto cursor-pointer z-30" />`
     page.insertBefore(zoomInWrapper, pageFirstChild);
+    
     zoomInWrapper.addEventListener('click', ()=> {
         page.classList.remove('overflow-y-hidden');
         zoomInWrapper.remove()
     })
+
+    const handleExit = (event) => {
+        if (event.type === 'keydown' && event.key === 'Escape') {
+            page.classList.remove('overflow-y-hidden');
+            zoomInWrapper.remove()
+        }
+    }
+
+    document.addEventListener('keydown', handleExit)
 }
