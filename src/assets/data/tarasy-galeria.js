@@ -4,7 +4,7 @@ const tarasyArray = [];
 for ( let i = 0; i < filesNum; i++) {
     tarasyArray.push({
         id: i,
-        imgSrc: `/src/assets/images/gallery/taras${i+1}.jpg`,
+        imgSrc: `gallery/taras${i+1}.jpg`,
         imgAlt: `Taras ${i+1}`
     })
 }
