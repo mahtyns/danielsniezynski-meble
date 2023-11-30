@@ -1,4 +1,4 @@
-const filesNum = 168;
+const filesNum = 12;
 const arrayFiles = [];
 
 for ( let i = 0; i < filesNum; i++) {
@@ -10,3 +10,4 @@ for ( let i = 0; i < filesNum; i++) {
 }
 
 export default arrayFiles
+
