@@ -1,5 +1,5 @@
 import tarasyArray from "../assets/data/tarasy-galeria";
-
+import { zoomInPictures } from "./zoom-pictures";
 const galleryContainer = document.getElementById('galeria-tarasy')
 
 const renderGallery = () => {
@@ -9,7 +9,8 @@ const renderGallery = () => {
 
         galleryContainer.appendChild(imageContainer)
     })
-
+    const galleryPicturesTarasy = document.querySelectorAll('#galeria-tarasy img');
+    galleryPicturesTarasy.forEach(picture => picture.addEventListener('click', ()=>zoomInPictures(picture)));
 
 }
 

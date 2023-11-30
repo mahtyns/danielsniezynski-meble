@@ -1,9 +1,6 @@
-const galleryPicturesTarasy = document.querySelectorAll('#galeria-tarasy img');
-const galleryPicturesMeble = document.querySelectorAll('#galeria-meble img');
-const page = document.querySelector('body')
-const pageFirstChild = page.firstChild;
-
 export const zoomInPictures = (pic) => {
+    const page = document.querySelector('body')
+    const pageFirstChild = page.firstChild;
     const zoomInWrapper = document.createElement('div');
     const imgSrc = pic.getAttribute('src');
     const imgAlt = pic.getAttribute('alt');
@@ -17,8 +14,3 @@ export const zoomInPictures = (pic) => {
         zoomInWrapper.remove()
     })
 }
-
-
-galleryPicturesTarasy.forEach(picture => picture.addEventListener('click', ()=>zoomInPictures(picture)));
-galleryPicturesMeble.forEach(picture => picture.addEventListener('click', ()=>zoomInPictures(picture)));
-
