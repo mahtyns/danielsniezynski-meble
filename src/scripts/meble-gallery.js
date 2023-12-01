@@ -1,4 +1,4 @@
-import arrayFiles from "../assets/data/meble-galeria";
+import { getGalleryMeble } from "../assets/data/meble-galeria";
 const showMoreButton = document.getElementById('meble-see-more')
 import { zoomInPictures } from "./zoom-pictures";
 const galleryContainer = document.getElementById('galeria-meble')
@@ -9,7 +9,7 @@ const addMorePhotosNum = 6;
 const renderGallery = () => {
     galleryContainer.innerHTML = '';
 
-    arrayFiles
+    getGalleryMeble(0)
         .slice(startInd, sliceNum)
         .forEach(image => {
             const imageContainer = document.createElement('div')

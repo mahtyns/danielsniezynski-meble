@@ -1,13 +1,13 @@
-const filesNum = 12;
-const arrayFiles = [];
+export const getGalleryMeble = (photoIndex) => {
+    const filesNum = 12;
+    const mebleArray = [];
 
-for ( let i = 0; i < filesNum; i++) {
-    arrayFiles.push({
-        id: i,
-        imgSrc: `gallery/img${i+1}.jpg`,
-        imgAlt: `Realizacja ${i+1}`
-    })
+    for (let i = photoIndex; i < filesNum; i++) {
+        mebleArray.push({
+            id: i,
+            imgSrc: `gallery/img${i + 1}.jpg`,
+            imgAlt: `Taras ${i + 1}`
+        })
+    }
+    return mebleArray;
 }
-
-export default arrayFiles
-
