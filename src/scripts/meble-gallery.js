@@ -9,6 +9,7 @@ const addMorePhotosNum = 6;
 const renderGallery = () => {
     galleryContainer.innerHTML = '';
 
+
     getGalleryMeble(0)
         .slice(startInd, sliceNum)
         .forEach(image => {
@@ -29,7 +30,7 @@ renderGallery();
 
 
 const addMorePhotos = () => {
-    if (sliceNum < arrayFiles.length) {
+    if (sliceNum < getGalleryMeble(0).length) {
         sliceNum = sliceNum + addMorePhotosNum;
         renderGallery()
     } 
