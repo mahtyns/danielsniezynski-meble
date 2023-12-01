@@ -11,7 +11,7 @@ const renderGallery = () => {
         galleryContainer.appendChild(imageContainer)
     })
     const galleryPicturesTarasy = document.querySelectorAll('#galeria-tarasy img');
-    galleryPicturesTarasy.forEach(picture => picture.addEventListener('click', ()=>zoomInPictures(picture)));
+    galleryPicturesTarasy.forEach((picture,index) => picture.addEventListener('click', ()=>zoomInPictures(galleryPicturesTarasy, index)));
 
 }
 

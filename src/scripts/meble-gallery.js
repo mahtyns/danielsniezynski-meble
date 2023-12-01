@@ -20,7 +20,7 @@ const renderGallery = () => {
         })
 
         const galleryPicturesMeble = document.querySelectorAll('#galeria-meble img');
-        galleryPicturesMeble.forEach(picture => picture.addEventListener('click', ()=>zoomInPictures(picture)));
+        galleryPicturesMeble.forEach((picture, index) => picture.addEventListener('click', ()=>zoomInPictures(galleryPicturesMeble, index)));
      }
 
 
