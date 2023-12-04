@@ -145,7 +145,7 @@
         </section>
         <section id="about" class=" bg-cream px-6 flex flex-col justify-center w-full py-12 md:py-24" >
             <h2 class="text-4xl pb-4 w-full md:text-center md:text-5xl">O nas</h2>
-            <div class="animationclass flex flex-col gap-4 md:w-1/2 md:mx-auto">
+            <div class="flex flex-col gap-4 md:w-1/2 md:mx-auto">
                 <p class="text-lg md:text-center md:text-xl">Nasza firma zajmuje się produkcją wszelkiego rodzaju mebli na wymiar - od projektu po montaż. Pracujemy na najwyższej jakości materiałach oraz do każdego zlecenia podchodzimy indywidualnie aby każdy klient był zadowolony i do nas wracał. Wykonujemy również prace w drewnie takie jak ogrodzenia drewniane, altanki, zadaszenia, tarasy. Posiadamy wieloletnie doświadczenie w branży, nie boimy się wyzwań i chętnie doradzamy naszym klientom.</p>
                 <p class="text-lg md:text-center md:text-xl">Działamy głównie na terenie Warszawy i okolic. </p>
             </div>
@@ -185,6 +185,28 @@
             <p class="text-lg md:text-center md:text-xl">Wykonujemy także renowacje wszelakich drewnianych konstrukcji, blatów,
                 elewacji, tarasów itd.</p>
         </section>
+        <section id="reviews" class=" bg-cream px-6 flex flex-col justify-center w-full py-12 md:py-24" >
+            <h2 class="text-4xl pb-4 w-full md:text-center md:text-5xl">Opinie naszych klientów</h2>
+            <div class="flex flex-col justify-center items-center">
+            <div class="slides flex flex-col gap-4 md:w-1/2 md:mx-auto pt-10">
+                <p class="text-lg md:text-2xl">Jestem niezwykle zadowolony z usług tego profesjonalisty od drewnianych mebli. Jego precyzja w wykonaniu, dbałość o szczegóły i umiejętność dostosowywania się do moich indywidualnych potrzeb sprawiły, że moje meble są nie tylko funkcjonalne, ale także estetyczne. Polecam z czystym sumieniem!</p>
+                <p class="text-xl font-crimson">Janusz P.</p>
+            </div>
+            <div class="slides flex flex-col gap-4 md:w-1/2 md:mx-auto pt-10">
+                <p class="text-lg md:text-2xl">Niezastąpiony stolarz! Wybór tego rzemieślnika okazał się strzałem w dziesiątkę. Jego umiejętności w obróbce drewna są imponujące, a efekt końcowy przekraczał moje oczekiwania. Bardzo profesjonalne podejście i terminowa realizacja zlecenia. Dziękuję za piękne, wykonane na zamówienie meble!</p>
+                <p class="text-xl font-crimson">Jarosław K.</p>
+            </div>
+            <div class="slides flex flex-col gap-4 md:w-1/2 md:mx-auto pt-10">
+                <p class="text-lg md:text-2xl">Korzystałem z usług tego fachowca do wykonania mebli do mojego nowego mieszkania, i jestem zachwycony rezultatem. Doskonała jakość drewna, staranność w detalach oraz kreatywność w projektowaniu sprawiły, że moje meble są unikalne i dopasowane do mojego stylu życia. Serdecznie polecam usługi tego stolarza!</p>
+                <p class="text-xl font-crimson">Bożenka S.</p>
+            </div>
+            <div class="flex flex-row gap-4 my-6">
+                <div class="dot border border-main-black w-4 h-4 rounded-xl cursor-pointer" onclick="currentSlide(1)"></div>
+                <div class="dot border border-main-black w-4 h-4 rounded-xl cursor-pointer" onclick="currentSlide(2)"></div>
+                <div class="dot border border-main-black w-4 h-4 rounded-xl cursor-pointer" onclick="currentSlide(3)"></div>
+            </div>
+            </div>
+        </section>
         <section id="contact" class="h-sm px-6 bg-special-green text-main-white flex flex-col justify-center">
             <div class="">
                 <h2 class="text-4xl pb-4 w-full md:text-center md:text-5xl"> Kontakt</h2>
@@ -218,11 +240,11 @@
                             <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="insta" class="w-8 h-8"/>
                         </a>
                     </div>
-                    <div class="">
+                    <div>
                         Copyright © 2023
                     </div>
                 </div>
-                <div class="text-right ">
+                <div class="text-right">
                     <a href="https://martynasmolarek.netlify.app" target="_blank">
                         Created by Martyna Smolarek
                     </a>
@@ -231,5 +253,6 @@
         </footer>
         <script type="module" src="./src/scripts/responsive-menu.js"></script>
         <script type="module" src="./src/scripts/animate.js"></script>
+        <script type="module" src="./src/scripts/review-gallery.js"></script>
     </body>
 </html>
